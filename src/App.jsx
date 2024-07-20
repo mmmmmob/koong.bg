@@ -153,7 +153,7 @@ function App() {
         </ModalContent>
       </Modal>
 
-      <div className="bg-color-main text-color-main flex h-[calc(100vh-56px)] w-screen items-center justify-evenly self-center max-sm:flex-col">
+      <div className="bg-color-main text-color-main flex h-[calc(100svh-56px)] w-screen items-center justify-evenly self-center max-sm:flex-col">
         <a
           onClick={aboutModal.onOpen}
           className="font-serif text-2xl hover:underline max-sm:text-xl"
