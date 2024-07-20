@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer components {
-  .bg-primary {
+  .bg-color-main {
     @apply bg-stone-200 dark:bg-zinc-900;
   }
-  .text-primary {
+  .text-color-main {
     @apply text-zinc-900 dark:text-stone-200;
   }
 }
