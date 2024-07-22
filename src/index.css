@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .bg-color-main {
+    @apply bg-stone-200 dark:bg-zinc-900;
+  }
+  .text-color-main {
+    @apply text-zinc-900 dark:text-stone-200;
+  }
+}
+
 @layer base {
   /* Komika Hand */
   @font-face {
