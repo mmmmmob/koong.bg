@@ -30,7 +30,7 @@ function App() {
         className="mx-4"
       >
         <ModalContent>
-          {() => (
+          {(onClose) => (
             <>
               <ModalHeader className="mt-3 flex flex-col gap-1 font-serif text-3xl">
                 About
@@ -40,7 +40,7 @@ function App() {
                   <div className="flex max-sm:flex-col sm:h-64">
                     <div className="flex-shrink-0">
                       <img
-                        src="/public/favicon.jpg"
+                        src="/favicon.jpg"
                         alt="avatar"
                         className="overflow-hidden sm:size-64"
                       />
@@ -94,7 +94,7 @@ function App() {
         className="mx-4"
       >
         <ModalContent>
-          {() => (
+          {(onClose) => (
             <>
               <ModalHeader className="mt-3 flex flex-col gap-1 font-serif text-3xl">
                 Works
@@ -142,7 +142,7 @@ function App() {
         className="mx-4"
       >
         <ModalContent>
-          {() => (
+          {(onClose) => (
             <>
               <ModalHeader className="mt-3 flex flex-col gap-1 font-serif text-3xl">
                 Shops
