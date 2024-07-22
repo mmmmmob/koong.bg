@@ -30,7 +30,7 @@ function App() {
         className="mx-4"
       >
         <ModalContent>
-          {(onClose) => (
+          {() => (
             <>
               <ModalHeader className="mt-3 flex flex-col gap-1 font-serif text-3xl">
                 About
@@ -94,7 +94,7 @@ function App() {
         className="mx-4"
       >
         <ModalContent>
-          {(onClose) => (
+          {() => (
             <>
               <ModalHeader className="mt-3 flex flex-col gap-1 font-serif text-3xl">
                 Works
@@ -142,7 +142,7 @@ function App() {
         className="mx-4"
       >
         <ModalContent>
-          {(onClose) => (
+          {() => (
             <>
               <ModalHeader className="mt-3 flex flex-col gap-1 font-serif text-3xl">
                 Shops
