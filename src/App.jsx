@@ -154,7 +154,7 @@ function App() {
       </Modal>
 
       <div className="bg-color-main text-color-main flex h-[calc(100svh-56px)] w-screen items-center justify-evenly self-center max-sm:flex-col">
-        <a
+        {/* <a
           //onClick={aboutModal.onOpen}
           className="font-serif text-2xl hover:underline max-sm:text-xl"
         >
@@ -165,22 +165,22 @@ function App() {
           className="font-serif text-2xl hover:underline max-sm:text-xl"
         >
           works
-        </a>
+        </a> */}
         <h1 className="font-sans text-6xl font-bold italic tracking-wider max-sm:text-5xl">
           KOONG
         </h1>
-        <a
+        {/* <a
           //onClick={shopsModal.onOpen}
           className="font-serif text-2xl hover:underline max-sm:text-xl"
         >
           shops
-        </a>
-        <a
+        </a> */}
+        {/* <a
           href="mailto:koong.bg@gmail.com"
           className="font-serif text-2xl hover:underline max-sm:text-xl"
         >
           contact
-        </a>
+        </a> */}
       </div>
       <footer className="sticky bottom-0">
         <Footer />

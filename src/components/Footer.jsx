@@ -1,9 +1,12 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { FaTiktok, FaXTwitter } from "react-icons/fa6";
+import { FaPatreon, FaTiktok, FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
     <div className="flex h-14 w-screen items-center justify-center gap-14 bg-stone-700 text-stone-200 dark:bg-zinc-700 dark:text-stone-200">
+      <a href="https://www.patreon.com/koongbg" target="_blank">
+        <FaPatreon size={25} />
+      </a>
       {/* Facebook */}
       <a href="https://www.facebook.com/koongbg" target="_blank">
         <FaFacebook size={25} />
