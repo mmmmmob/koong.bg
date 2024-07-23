@@ -36,45 +36,43 @@ function App() {
                 About
               </ModalHeader>
               <ModalBody className="my-2 font-serif text-lg font-thin">
-                <ScrollShadow size={50}>
-                  <div className="flex max-sm:flex-col sm:h-64">
-                    <div className="flex-shrink-0">
-                      <img
-                        src="/favicon.jpg"
-                        alt="avatar"
-                        className="overflow-hidden sm:size-64"
-                      />
-                    </div>
-                    <ScrollShadow size={50}>
-                      <div className="max-sm:my-3 sm:mx-3">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Vero, optio! Expedita voluptatibus animi ad
-                          illum aperiam temporibus nihil, quo deleniti, hic modi
-                          corrupti laudantium ea cum quas ut doloremque illo.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Vero, optio! Expedita voluptatibus animi ad
-                          illum aperiam temporibus nihil, quo deleniti, hic modi
-                          corrupti laudantium ea cum quas ut doloremque illo.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Vero, optio! Expedita voluptatibus animi ad
-                          illum aperiam temporibus nihil, quo deleniti, hic modi
-                          corrupti laudantium ea cum quas ut doloremque illo.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Vero, optio! Expedita voluptatibus animi ad
-                          illum aperiam temporibus nihil, quo deleniti, hic modi
-                          corrupti laudantium ea cum quas ut doloremque illo.
-                        </p>
-                      </div>
-                    </ScrollShadow>
+                <div className="flex max-sm:flex-col sm:h-64">
+                  <div className="flex-shrink-0">
+                    <img
+                      src="/favicon.jpg"
+                      alt="avatar"
+                      className="overflow-hidden sm:size-64"
+                    />
                   </div>
-                </ScrollShadow>
+                  <ScrollShadow size={50}>
+                    <div className="max-sm:my-3 sm:mx-3">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vero, optio! Expedita voluptatibus animi ad illum
+                        aperiam temporibus nihil, quo deleniti, hic modi
+                        corrupti laudantium ea cum quas ut doloremque illo.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vero, optio! Expedita voluptatibus animi ad illum
+                        aperiam temporibus nihil, quo deleniti, hic modi
+                        corrupti laudantium ea cum quas ut doloremque illo.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vero, optio! Expedita voluptatibus animi ad illum
+                        aperiam temporibus nihil, quo deleniti, hic modi
+                        corrupti laudantium ea cum quas ut doloremque illo.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vero, optio! Expedita voluptatibus animi ad illum
+                        aperiam temporibus nihil, quo deleniti, hic modi
+                        corrupti laudantium ea cum quas ut doloremque illo.
+                      </p>
+                    </div>
+                  </ScrollShadow>
+                </div>
               </ModalBody>
               <ModalFooter></ModalFooter>
             </>
