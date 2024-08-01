@@ -9,6 +9,9 @@
   .text-color-main {
     @apply text-zinc-900 dark:text-stone-200;
   }
+  .text-color-invert {
+    @apply text-stone-600 dark:text-stone-300;
+  }
 }
 
 @layer base {

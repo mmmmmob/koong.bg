@@ -166,9 +166,27 @@ function App() {
         >
           works
         </a> */}
-        <h1 className="font-sans text-6xl font-bold italic tracking-wider max-sm:text-5xl">
-          KOONG
-        </h1>
+        <div className="w-fit">
+          <h1 className="text-center font-sans text-6xl font-bold italic tracking-wider max-sm:text-5xl">
+            KOONG
+          </h1>
+          <div className="mt-5 flex items-center self-center p-2">
+            <div className="mr-2">
+              <img
+                src="/bookcover.png"
+                alt="pointillism_cover"
+                className="size-8 rounded drop-shadow-md"
+              />
+            </div>
+            <a
+              href="https://form.typeform.com/to/fwB823a4"
+              target="_blank"
+              className="hover:text-color-invert font-serif font-light max-sm:text-sm"
+            >
+              Pre-order 'Pointillism Vol.1' here.
+            </a>
+          </div>
+        </div>
         {/* <a
           //onClick={shopsModal.onOpen}
           className="font-serif text-2xl hover:underline max-sm:text-xl"
