@@ -181,7 +181,7 @@ function App() {
             <a
               href="https://form.typeform.com/to/fwB823a4"
               target="_blank"
-              className="hover:text-color-invert font-serif font-light max-sm:text-sm"
+              className="hover:text-color-invert font-serif font-light underline decoration-dashed decoration-1 underline-offset-4 hover:decoration-solid max-sm:text-sm"
             >
               Pre-order 'Pointillism Vol.1' here.
             </a>
