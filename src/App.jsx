@@ -181,9 +181,9 @@ function App() {
             <a
               href="https://koongbg.notion.site/434578ce13634cb880ef55f36293d131?v=0a7d46bb7dc047b1bbe96cf869322e03&pvs=4"
               target="_blank"
-              className="hover:text-color-invert font-serif font-light underline decoration-dashed decoration-1 underline-offset-4 hover:decoration-solid max-sm:text-sm"
+              className="hover:text-color-invert font-serif font-light underline decoration-dashed decoration-1 underline-offset-4 hover:decoration-solid max-sm:text-xs"
             >
-              Check your order status of 'Pointillism Vol.1' here.
+              Check your pre-order status.
             </a>
           </div>
         </div>
