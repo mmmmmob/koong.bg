@@ -152,20 +152,7 @@ function App() {
           )}
         </ModalContent>
       </Modal>
-
-      <div className="bg-color-main text-color-main flex h-[calc(100svh-56px)] w-screen items-center justify-evenly self-center max-sm:flex-col">
-        {/* <a
-          //onClick={aboutModal.onOpen}
-          className="font-serif text-2xl hover:underline max-sm:text-xl"
-        >
-          about
-        </a>
-        <a
-          //onClick={worksModal.onOpen}
-          className="font-serif text-2xl hover:underline max-sm:text-xl"
-        >
-          works
-        </a> */}
+      <div className="bg-color-main text-color-main flex h-[calc(100svh-56px)] w-screen items-center justify-center">
         <div className="w-fit">
           <h1 className="text-center font-sans text-6xl font-bold italic tracking-wider max-sm:text-5xl">
             KOONG
@@ -180,7 +167,7 @@ function App() {
                 />
               </div>
               <div className="flex space-x-2">
-                <h1 className="self-center font-serif text-lg max-sm:text-base">
+                <h1 className="self-center font-serif text-lg font-semibold max-sm:text-base">
                   Pointillism Vol.1 Available Now!
                 </h1>
               </div>
@@ -203,18 +190,20 @@ function App() {
             </div>
           </div>
         </div>
-        {/* <a
-          //onClick={shopsModal.onOpen}
-          className="font-serif text-2xl hover:underline max-sm:text-xl"
-        >
-          shops
-        </a> */}
-        {/* <a
-          href="mailto:koong.bg@gmail.com"
-          className="font-serif text-2xl hover:underline max-sm:text-xl"
-        >
-          contact
-        </a> */}
+        <div className="absolute bottom-28 flex flex-col">
+          <div className="mb-7">
+            <p className="font-serif text-lg font-bold">Follow Me!</p>
+          </div>
+          <svg
+            className="size-12 animate-bounce self-center fill-black dark:fill-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 25 25"
+          >
+            <g id="Down">
+              <polygon points="18.294 16.793 13.001 22.086 13.001 1 12.001 1 12.001 22.086 6.706 16.792 5.999 17.499 12.501 24 19.001 17.5 18.294 16.793" />
+            </g>
+          </svg>
+        </div>
       </div>
       <footer className="sticky bottom-0">
         <Footer />
