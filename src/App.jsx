@@ -170,21 +170,37 @@ function App() {
           <h1 className="text-center font-sans text-6xl font-bold italic tracking-wider max-sm:text-5xl">
             KOONG
           </h1>
-          <div className="mt-5 flex items-center self-center p-2">
-            <div className="mr-2">
-              <img
-                src="/bookcover.png"
-                alt="pointillism_cover"
-                className="size-8 rounded drop-shadow-md"
-              />
+          <div className="m-5 flex flex-col items-center self-center">
+            <div className="flex pb-2">
+              <div className="mr-2">
+                <img
+                  src="/bookcover.png"
+                  alt="pointillism_cover"
+                  className="size-8 rounded drop-shadow-md"
+                />
+              </div>
+              <div className="flex space-x-2">
+                <h1 className="self-center font-serif text-lg max-sm:text-base">
+                  Pointillism Vol.1 Available Now!
+                </h1>
+              </div>
             </div>
-            <a
-              href="https://koongbg.notion.site/434578ce13634cb880ef55f36293d131?v=0a7d46bb7dc047b1bbe96cf869322e03&pvs=4"
-              target="_blank"
-              className="hover:text-color-invert font-serif font-light underline decoration-dashed decoration-1 underline-offset-4 hover:decoration-solid max-sm:text-xs"
-            >
-              Check your pre-order status.
-            </a>
+            <div className="flex space-x-2">
+              <a
+                href="https://www.etsy.com/listing/1779190793/pointillism-volume-1-a-graphic-novel-by"
+                target="_blank"
+                className="hover:text-color-invert font-serif font-light underline decoration-dashed decoration-1 underline-offset-4 hover:decoration-solid max-sm:text-xs"
+              >
+                Buy on Etsy
+              </a>
+              <a
+                href="https://pinkoi.com/product/PCN5rC83"
+                target="_blank"
+                className="hover:text-color-invert font-serif font-light underline decoration-dashed decoration-1 underline-offset-4 hover:decoration-solid max-sm:text-xs"
+              >
+                Buy on Pinkoi
+              </a>
+            </div>
           </div>
         </div>
         {/* <a
