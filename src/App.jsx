@@ -5,8 +5,8 @@ function App() {
   return (
     <>
       <div className="bg-color-main text-color-main flex h-[calc(100svh-56px)] w-screen items-center justify-center">
-        <div className="w-fit">
-          <h1 className="text-center font-sans text-6xl font-bold italic tracking-wider max-sm:text-5xl">
+        <div className="w-max">
+          <h1 className="animate-slowpan bg-size-200% mb-8 bg-[url('/bg.gif')] bg-clip-text text-center font-sans text-8xl font-bold italic tracking-wider text-transparent drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)] max-sm:text-7xl">
             KOONG
           </h1>
           <div className="m-5 flex flex-col items-center self-center">
@@ -42,7 +42,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-28 flex flex-col">
+        <div className="absolute bottom-20 flex flex-col">
           <div className="mb-7">
             <p className="font-serif text-lg font-bold">Follow Me!</p>
           </div>
