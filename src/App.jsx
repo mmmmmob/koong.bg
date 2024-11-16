@@ -1,209 +1,61 @@
-import {
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ScrollShadow,
-  useDisclosure,
-} from "@nextui-org/react";
 import { Analytics } from "@vercel/analytics/react";
 import Footer from "./components/Footer";
 
 function App() {
-  const aboutModal = useDisclosure();
-  const worksModal = useDisclosure();
-  const shopsModal = useDisclosure();
-
   return (
     <>
-      {/* about modal */}
-      <Modal
-        isOpen={aboutModal.isOpen}
-        id="1"
-        backdrop="blur"
-        isDismissable
-        placement="center"
-        onOpenChange={aboutModal.onOpenChange}
-        size="5xl"
-        scrollBehavior="inside"
-        className="mx-4"
-      >
-        <ModalContent>
-          {() => (
-            <>
-              <ModalHeader className="mt-3 flex flex-col gap-1 font-serif text-3xl">
-                About
-              </ModalHeader>
-              <ModalBody className="my-2 font-serif text-lg font-thin">
-                <div className="flex max-sm:flex-col sm:h-64">
-                  <div className="flex-shrink-0">
-                    <img
-                      src="/favicon.jpg"
-                      alt="avatar"
-                      className="overflow-hidden sm:size-64"
-                    />
-                  </div>
-                  <ScrollShadow size={50}>
-                    <div className="max-sm:my-3 sm:mx-3">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Vero, optio! Expedita voluptatibus animi ad illum
-                        aperiam temporibus nihil, quo deleniti, hic modi
-                        corrupti laudantium ea cum quas ut doloremque illo.
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Vero, optio! Expedita voluptatibus animi ad illum
-                        aperiam temporibus nihil, quo deleniti, hic modi
-                        corrupti laudantium ea cum quas ut doloremque illo.
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Vero, optio! Expedita voluptatibus animi ad illum
-                        aperiam temporibus nihil, quo deleniti, hic modi
-                        corrupti laudantium ea cum quas ut doloremque illo.
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Vero, optio! Expedita voluptatibus animi ad illum
-                        aperiam temporibus nihil, quo deleniti, hic modi
-                        corrupti laudantium ea cum quas ut doloremque illo.
-                      </p>
-                    </div>
-                  </ScrollShadow>
-                </div>
-              </ModalBody>
-              <ModalFooter></ModalFooter>
-            </>
-          )}
-        </ModalContent>
-      </Modal>
-
-      {/* works modal */}
-      <Modal
-        isOpen={worksModal.isOpen}
-        backdrop="blur"
-        isDismissable
-        placement="center"
-        onOpenChange={worksModal.onOpenChange}
-        size="5xl"
-        scrollBehavior="inside"
-        className="mx-4"
-      >
-        <ModalContent>
-          {() => (
-            <>
-              <ModalHeader className="mt-3 flex flex-col gap-1 font-serif text-3xl">
-                Works
-              </ModalHeader>
-              <ModalBody className="my-2 font-serif text-lg font-thin">
-                <ScrollShadow size={100}>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pulvinar risus non risus hendrerit venenatis.
-                    Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pulvinar risus non risus hendrerit venenatis.
-                    Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                  </p>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pulvinar risus non risus hendrerit venenatis.
-                    Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pulvinar risus non risus hendrerit venenatis.
-                    Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                  </p>
-                </ScrollShadow>
-              </ModalBody>
-              <ModalFooter></ModalFooter>
-            </>
-          )}
-        </ModalContent>
-      </Modal>
-
-      {/* shops modal */}
-      <Modal
-        isOpen={shopsModal.isOpen}
-        backdrop="blur"
-        isDismissable
-        placement="center"
-        onOpenChange={shopsModal.onOpenChange}
-        size="5xl"
-        scrollBehavior="inside"
-        className="mx-4"
-      >
-        <ModalContent>
-          {() => (
-            <>
-              <ModalHeader className="mt-3 flex flex-col gap-1 font-serif text-3xl">
-                Shops
-              </ModalHeader>
-              <ModalBody className="my-2 font-serif text-lg font-thin">
-                <ScrollShadow size={100}>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pulvinar risus non risus hendrerit venenatis.
-                    Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pulvinar risus non risus hendrerit venenatis.
-                    Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                  </p>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pulvinar risus non risus hendrerit venenatis.
-                    Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pulvinar risus non risus hendrerit venenatis.
-                    Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                  </p>
-                </ScrollShadow>
-              </ModalBody>
-              <ModalFooter></ModalFooter>
-            </>
-          )}
-        </ModalContent>
-      </Modal>
-
-      <div className="bg-color-main text-color-main flex h-[calc(100svh-56px)] w-screen items-center justify-evenly self-center max-sm:flex-col">
-        <a
-          onClick={aboutModal.onOpen}
-          className="font-serif text-2xl hover:underline max-sm:text-xl"
-        >
-          about
-        </a>
-        <a
-          onClick={worksModal.onOpen}
-          className="font-serif text-2xl hover:underline max-sm:text-xl"
-        >
-          works
-        </a>
-        <h1 className="font-sans text-6xl font-bold italic tracking-wider max-sm:text-5xl">
-          KOONG
-        </h1>
-        <a
-          onClick={shopsModal.onOpen}
-          className="font-serif text-2xl hover:underline max-sm:text-xl"
-        >
-          shops
-        </a>
-        <a
-          href="mailto:koong.bg@gmail.com"
-          className="font-serif text-2xl hover:underline max-sm:text-xl"
-        >
-          contact
-        </a>
+      <div className="bg-color-main text-color-main flex h-[calc(100svh-56px)] w-screen items-center justify-center">
+        <div className="w-max">
+          <h1 className="animate-slowpan bg-size-200% mb-8 bg-[url('/bg.gif')] bg-clip-text text-center font-sans text-8xl font-bold italic tracking-wider text-transparent drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)] max-sm:text-7xl">
+            KOONG
+          </h1>
+          <div className="m-5 flex flex-col items-center self-center">
+            <div className="flex pb-2">
+              <div className="mr-2">
+                <img
+                  src="/bookcover.png"
+                  alt="pointillism_cover"
+                  className="size-8 rounded drop-shadow-md"
+                />
+              </div>
+              <div className="flex space-x-2">
+                <h1 className="self-center font-serif text-lg font-semibold max-sm:text-base">
+                  Pointillism Vol.1 Available Now!
+                </h1>
+              </div>
+            </div>
+            <div className="flex space-x-2">
+              <a
+                href="https://www.etsy.com/listing/1779190793/pointillism-volume-1-a-graphic-novel-by"
+                target="_blank"
+                className="hover:text-color-invert font-serif font-light underline decoration-dashed decoration-1 underline-offset-4 hover:decoration-solid max-sm:text-xs"
+              >
+                Buy on Etsy
+              </a>
+              <a
+                href="https://pinkoi.com/product/PCN5rC83"
+                target="_blank"
+                className="hover:text-color-invert font-serif font-light underline decoration-dashed decoration-1 underline-offset-4 hover:decoration-solid max-sm:text-xs"
+              >
+                Buy on Pinkoi
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-20 flex flex-col">
+          <div className="mb-7">
+            <p className="font-serif text-lg font-bold">Follow Me!</p>
+          </div>
+          <svg
+            className="size-12 animate-bounce self-center fill-black dark:fill-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 25 25"
+          >
+            <g id="Down">
+              <polygon points="18.294 16.793 13.001 22.086 13.001 1 12.001 1 12.001 22.086 6.706 16.792 5.999 17.499 12.501 24 19.001 17.5 18.294 16.793" />
+            </g>
+          </svg>
+        </div>
       </div>
       <footer className="sticky bottom-0">
         <Footer />
