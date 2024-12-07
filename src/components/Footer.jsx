@@ -1,12 +1,10 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaPatreon, FaTiktok, FaXTwitter } from "react-icons/fa6";
-import { SiWebtoon } from "react-icons/si";
-import { SiBluesky } from "react-icons/si";
+import { SiBluesky, SiWebtoon } from "react-icons/si";
 
 function Footer() {
   return (
-    <div
-      className="flex h-14 w-screen items-center justify-center gap-14 bg-stone-700 text-stone-200 dark:bg-zinc-700 dark:text-stone-200 max-sm:gap-7">
+    <div className="flex h-14 w-screen items-center justify-center gap-14 bg-stone-700 text-stone-200 max-sm:gap-7 dark:bg-zinc-700 dark:text-stone-200">
       {/* Patreon */}
       <a href="https://www.patreon.com/koongbg" target="_blank">
         <FaPatreon size={25} />
@@ -19,7 +17,7 @@ function Footer() {
         <SiWebtoon size={25} />
       </a>
       {/* Bluesky */}
-      <a href="https://bsky.app/profile/koong.bg" target="_blank">
+      <a href="https://bsky.app/profile/koongbg.bsky.social" target="_blank">
         <SiBluesky size={25} />
       </a>
       {/* Instagram */}
