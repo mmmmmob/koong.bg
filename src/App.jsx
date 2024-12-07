@@ -1,11 +1,19 @@
 import { Analytics } from "@vercel/analytics/react";
-import bgvid1 from "./assets/videos/bgvid1.mp4";
-import bgvid2 from "./assets/videos/bgvid2.mp4";
-import bgvid3 from "./assets/videos/bgvid3.mp4";
-import bgvid4 from "./assets/videos/bgvid4.mp4";
+import bgvid1Mp4 from "./assets/videos/bgvid1.mp4";
+import bgvid2Mp4 from "./assets/videos/bgvid2.mp4";
+import bgvid3Mp4 from "./assets/videos/bgvid3.mp4";
+import bgvid4Mp4 from "./assets/videos/bgvid4.mp4";
+import {
+  default as bgvid1WebM,
+  default as bgvid2WebM,
+  default as bgvid3WebM,
+  default as bgvid4WebM,
+} from "./assets/videos/bgvid4.webm";
+
 import Footer from "./components/Footer";
 
-const videos = [bgvid1, bgvid2, bgvid3, bgvid4];
+const videosMp4 = [bgvid1Mp4, bgvid2Mp4, bgvid3Mp4, bgvid4Mp4];
+const videosWebM = [bgvid1WebM, bgvid2WebM, bgvid3WebM, bgvid4WebM];
 const random = Math.floor(Math.random() * 4);
 
 function App() {
@@ -13,7 +21,8 @@ function App() {
     <>
       <div className="bg-color-main text-color-main flex h-[calc(100svh-56px)] w-screen items-center justify-center">
         <video autoPlay loop muted className="bg-vid">
-          <source src={videos[random]} type="video/mp4" />
+          <source src={videosMp4[random]} type="video/mp4" />
+          <source src={videosWebM[random]} type="video/webm" />
         </video>
         <div className="w-max">
           <h1 className="bg-size-200% z-50 mb-8 text-center font-sans text-8xl font-bold italic tracking-wider drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)] max-sm:text-7xl">
