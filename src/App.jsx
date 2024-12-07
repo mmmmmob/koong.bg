@@ -1,15 +1,25 @@
 import { Analytics } from "@vercel/analytics/react";
+import bgvid1 from "./assets/videos/bgvid1.mp4";
+import bgvid2 from "./assets/videos/bgvid2.mp4";
+import bgvid3 from "./assets/videos/bgvid3.mp4";
+import bgvid4 from "./assets/videos/bgvid4.mp4";
 import Footer from "./components/Footer";
+
+const videos = [bgvid1, bgvid2, bgvid3, bgvid4];
+const random = Math.floor(Math.random() * 4);
 
 function App() {
   return (
     <>
       <div className="bg-color-main text-color-main flex h-[calc(100svh-56px)] w-screen items-center justify-center">
+        <video autoPlay loop muted className="bg-vid">
+          <source src={videos[random]} type="video/mp4" />
+        </video>
         <div className="w-max">
-          <h1 className="animate-slowpan bg-size-200% mb-8 bg-[url('/bg.gif')] bg-clip-text text-center font-sans text-8xl font-bold italic tracking-wider text-transparent drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)] max-sm:text-7xl">
+          <h1 className="bg-size-200% z-50 mb-8 text-center font-sans text-8xl font-bold italic tracking-wider drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)] max-sm:text-7xl">
             KOONG
           </h1>
-          <div className="m-5 flex flex-col items-center self-center">
+          <div className="z-10 m-5 flex flex-col items-center self-center">
             <div className="flex pb-2">
               <div className="mr-2">
                 <img
@@ -19,12 +29,12 @@ function App() {
                 />
               </div>
               <div className="flex space-x-2">
-                <h1 className="self-center font-serif text-lg font-semibold max-sm:text-base">
+                <h1 className="z-50 self-center font-serif text-lg font-semibold max-sm:text-base">
                   Pointillism Vol.1 Available Now!
                 </h1>
               </div>
             </div>
-            <div className="flex space-x-2">
+            <div className="z-50 flex space-x-2">
               <a
                 href="https://www.etsy.com/listing/1779190793/pointillism-volume-1-a-graphic-novel-by"
                 target="_blank"

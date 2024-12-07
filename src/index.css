@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-vid {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
 @layer components {
   .bg-color-main {
     @apply bg-stone-200 dark:bg-zinc-900;
