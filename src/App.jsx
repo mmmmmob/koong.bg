@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <div className="bg-color-main text-color-main flex h-[calc(100svh-56px)] w-screen items-center justify-center">
-        <video autoPlay loop muted className="bg-vid">
+        <video autoPlay loop playsInline muted className="bg-vid">
           <source src={videosMp4[random]} type="video/mp4" />
           <source src={videosWebM[random]} type="video/webm" />
         </video>
