@@ -12,13 +12,13 @@
 
 @layer components {
   .bg-color-main {
-    @apply bg-stone-200 dark:bg-zinc-900;
+    @apply bg-zinc-900;
   }
   .text-color-main {
-    @apply text-zinc-900 dark:text-stone-200;
+    @apply text-stone-200;
   }
   .text-color-invert {
-    @apply text-stone-600 dark:text-stone-300;
+    @apply text-stone-300;
   }
 }
 

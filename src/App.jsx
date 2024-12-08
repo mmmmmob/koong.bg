@@ -1,14 +1,12 @@
 import { Analytics } from "@vercel/analytics/react";
 import bgvid1Mp4 from "./assets/videos/bgvid1.mp4";
+import bgvid1WebM from "./assets/videos/bgvid1.webm";
 import bgvid2Mp4 from "./assets/videos/bgvid2.mp4";
+import bgvid2WebM from "./assets/videos/bgvid2.webm";
 import bgvid3Mp4 from "./assets/videos/bgvid3.mp4";
+import bgvid3WebM from "./assets/videos/bgvid3.webm";
 import bgvid4Mp4 from "./assets/videos/bgvid4.mp4";
-import {
-  default as bgvid1WebM,
-  default as bgvid2WebM,
-  default as bgvid3WebM,
-  default as bgvid4WebM,
-} from "./assets/videos/bgvid4.webm";
+import bgvid4WebM from "./assets/videos/bgvid4.webm";
 
 import Footer from "./components/Footer";
 
@@ -38,7 +36,7 @@ function App() {
                 />
               </div>
               <div className="flex space-x-2">
-                <h1 className="z-50 self-center font-serif text-lg font-semibold max-sm:text-base">
+                <h1 className="z-50 self-center font-serif text-lg font-semibold drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)] max-sm:text-base">
                   Pointillism Vol.1 Available Now!
                 </h1>
               </div>
@@ -47,14 +45,14 @@ function App() {
               <a
                 href="https://www.etsy.com/listing/1779190793/pointillism-volume-1-a-graphic-novel-by"
                 target="_blank"
-                className="hover:text-color-invert font-serif font-light underline decoration-dashed decoration-1 underline-offset-4 hover:decoration-solid max-sm:text-xs"
+                className="hover:text-color-invert font-serif font-light underline decoration-dashed decoration-1 underline-offset-4 drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)] hover:decoration-solid max-sm:text-xs"
               >
                 Buy on Etsy
               </a>
               <a
                 href="https://pinkoi.com/product/PCN5rC83"
                 target="_blank"
-                className="hover:text-color-invert font-serif font-light underline decoration-dashed decoration-1 underline-offset-4 hover:decoration-solid max-sm:text-xs"
+                className="hover:text-color-invert font-serif font-light underline decoration-dashed decoration-1 underline-offset-4 drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)] hover:decoration-solid max-sm:text-xs"
               >
                 Buy on Pinkoi
               </a>
@@ -63,10 +61,12 @@ function App() {
         </div>
         <div className="absolute bottom-20 flex flex-col">
           <div className="mb-7">
-            <p className="font-serif text-lg font-bold">Follow Me!</p>
+            <p className="font-serif text-lg font-bold drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)]">
+              Follow Me!
+            </p>
           </div>
           <svg
-            className="size-12 animate-bounce self-center fill-black dark:fill-white"
+            className="size-12 animate-bounce self-center fill-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 25 25"
           >
