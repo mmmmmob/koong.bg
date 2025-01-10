@@ -43,13 +43,13 @@ function App() {
               >
                 Buy on Etsy
               </a>
-              <a
+              {/* <a
                 href="https://pinkoi.com/product/PCN5rC83"
                 target="_blank"
                 className="hover:text-color-invert font-serif font-light underline decoration-dashed decoration-1 underline-offset-4 drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)] hover:decoration-solid max-sm:text-xs"
               >
                 Buy on Pinkoi
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

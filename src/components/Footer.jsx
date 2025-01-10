@@ -1,11 +1,10 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaPatreon, FaTiktok, FaXTwitter } from "react-icons/fa6";
-import { SiBluesky, SiWebtoon } from "react-icons/si";
-import { SiXiaohongshu } from "react-icons/si";
+import { SiBluesky, SiWebtoon, SiXiaohongshu } from "react-icons/si";
 
 function Footer() {
   return (
-    <div className="flex h-14 w-screen items-center justify-center gap-14 bg-stone-700 text-stone-200 max-sm:gap-7 dark:bg-zinc-700 dark:text-stone-200">
+    <div className="flex h-14 w-screen items-center justify-center gap-14 bg-stone-700 text-stone-200 max-sm:gap-5 dark:bg-zinc-700 dark:text-stone-200">
       {/* Webtoon */}
       <a
         href="https://www.webtoons.com/en/canvas/pointillism/list?title_no=835155"
@@ -35,8 +34,11 @@ function Footer() {
         <FaTiktok size={24} />
       </a>
       {/* Xiaohongshu */}
-      <a href="https://www.xiaohongshu.com/user/profile/677782f3000000001801c8d2" target="_blank">
-        <SiXiaohongshu size={45} />
+      <a
+        href="https://www.xiaohongshu.com/user/profile/677782f3000000001801c8d2"
+        target="_blank"
+      >
+        <SiXiaohongshu size={40} />
       </a>
       {/* Facebook */}
       <a href="https://www.facebook.com/koongbg" target="_blank">
