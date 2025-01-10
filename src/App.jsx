@@ -3,11 +3,12 @@ import bgvid1Mp4 from "./assets/videos/bgvid1.mp4";
 import bgvid2Mp4 from "./assets/videos/bgvid2.mp4";
 import bgvid3Mp4 from "./assets/videos/bgvid3.mp4";
 import bgvid4Mp4 from "./assets/videos/bgvid4.mp4";
+import bgvid5Mp4 from "./assets/videos/bgvid5.mp4";
 
 import Footer from "./components/Footer";
 
-const videosMp4 = [bgvid1Mp4, bgvid2Mp4, bgvid3Mp4, bgvid4Mp4];
-const random = Math.floor(Math.random() * 4);
+const videosMp4 = [bgvid1Mp4, bgvid2Mp4, bgvid3Mp4, bgvid4Mp4, bgvid5Mp4];
+const random = Math.floor(Math.random() * 5);
 
 function App() {
   return (
